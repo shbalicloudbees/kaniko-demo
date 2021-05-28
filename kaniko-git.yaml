@@ -9,7 +9,7 @@ spec:
   - name: kaniko
     image: gcr.io/kaniko-project/executor:debug
     args: ["--context=git://github.com/shbalicloudbees/kaniko-demo",
-            "--destination=gcr.io/saraps/devops-toolkit:1.0.0"]
+            "--destination=shbali/devops-toolkit:1.0.0"]
     volumeMounts:
       - name: kaniko-secret
         mountPath: /kaniko/.docker
